@@ -1,4 +1,4 @@
-# CREI
+# Joudah Al-Ibtkar (`joudah-ibtkar`)
 
 # Joudah Al-Ibtkar (JIC) — Official Website
 
