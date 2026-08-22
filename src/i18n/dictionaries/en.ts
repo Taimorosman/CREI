@@ -2,9 +2,9 @@ import type { Dictionary } from "./types";
 
 export const en: Dictionary = {
   brand: {
-    name: "The First System",
-    short: "TFS",
-    tagline: "Engineering Reliability into Every Surface",
+    name: "Joudah Al-Ibtkar",
+    short: "JIC",
+    tagline: "Quality & Innovation at Every Step",
   },
   nav: {
     home: "Home",
@@ -32,26 +32,26 @@ export const en: Dictionary = {
   },
   home: {
     hero: {
-      eyebrow: "Decorative and construction chemicals • Since 2015",
-      title: "Powerful Materials.",
-      titleAccent: "Exceptional Supply.",
+      eyebrow: "Decorative and construction chemicals • Since 2023",
+      title: "Innovation Driven.",
+      titleAccent: "Quality Delivered.",
       subtitle:
-        "We deliver advanced decorative and construction chemicals and engineered solutions to the Kingdom's most ambitious builds — backed by over a decade of on-site reliability and a global supply network.",
+        "Joudah Al-Ibtkar (JIC) delivers advanced decorative and construction chemical solutions to the Kingdom's most ambitious builds — backed by a commitment to quality, innovation, and reliable on-site support.",
       ctaPrimary: "Explore Solutions",
       ctaSecondary: "Technical Catalog",
       stats: [
-        { value: "11+", label: "Years of innovation" },
+        { value: "2+", label: "Years of excellence" },
         { value: "10", label: "Specialized systems" },
-        { value: "500+", label: "Projects delivered" },
-        { value: "3", label: "Regional offices" },
+        { value: "200+", label: "Projects delivered" },
+        { value: "1", label: "Riyadh headquarters" },
       ],
     },
     intro: {
       eyebrow: "Who we are",
-      title: "Exclusive partner of PROTECTIVE COATINGS Concepts in Saudi Arabia.",
-      body: "The First System (TFS) supplies high-performance chemical solutions and engineering services to the construction sector across the Kingdom. Our partnership with CCC and a curated portfolio of global brands means architects, contractors, and operators get a single, dependable source for materials that perform.",
+      title: "Your trusted partner for quality innovation in construction chemicals.",
+      body: "Joudah Al-Ibtkar Limited (JIC) supplies high-performance chemical solutions and engineering services to the construction sector across the Kingdom. Our curated portfolio of global brands means architects, contractors, and operators get a single, dependable source for materials that perform.",
       bullets: [
-        "Saudi-built logistics with same-week site delivery",
+        "Saudi-based logistics with fast site delivery",
         "Certified technicians for on-site application support",
         "Ten engineered systems under one technical roof",
       ],
@@ -113,23 +113,23 @@ export const en: Dictionary = {
   },
   about: {
     hero: {
-      eyebrow: "Established 2015",
-      title: "Strategic leadership in decorative and construction chemicals.",
-      body: "For more than a decade we have defined excellence in the construction chemicals sector across the Kingdom. As exclusive agent for PROTECTIVE COATINGS Concepts, we deliver world-class decorative and structural solutions to landmark architectural projects.",
+      eyebrow: "Established 2023",
+      title: "A new standard in quality and innovation for construction chemicals.",
+      body: "Joudah Al-Ibtkar Limited (JIC) was founded with a singular mission: to bring world-class decorative and structural chemical solutions to the Kingdom's construction sector — with uncompromising quality, technical expertise, and genuine accountability.",
     },
     stats: [
-      { value: "11+", unit: "years", label: "Of innovation" },
+      { value: "2+", unit: "years", label: "Of quality innovation" },
       { value: "10", unit: "systems", label: "Specialized verticals" },
-      { value: "500+", unit: "projects", label: "Delivered across KSA" },
-      { value: "1", unit: "exclusive", label: "CCC agent in Saudi Arabia" },
+      { value: "200+", unit: "projects", label: "Delivered across KSA" },
+      { value: "1", unit: "company", label: "Dedicated to excellence" },
     ],
     story: {
       eyebrow: "Our story",
-      title: "Built on chemistry. Proven on site.",
+      title: "Built on quality. Proven on site.",
       paragraphs: [
-        "Founded in 2015 in Riyadh, The First System emerged from a simple conviction: the Kingdom's most ambitious builds deserve materials that match their ambition — and a partner that stays on-site until they perform.",
-        "Today we operate across Riyadh, Jeddah, and Dammam, supplying ten engineered systems backed by a global brand portfolio led by PROTECTIVE COATINGS Concepts. Our engineers are present from method statement to final inspection.",
-        "Every project we touch is a quiet promise: that what we specify will outlast the building it's installed in.",
+        "Founded in 2023 in Riyadh, Joudah Al-Ibtkar emerged from a clear conviction: the Kingdom's most ambitious builds deserve materials that match their ambition — and a partner that stays on-site until they perform.",
+        "Today we operate from our Riyadh headquarters in Al Maseef District, supplying ten engineered systems backed by a global brand portfolio. Our engineers are present from method statement to final inspection.",
+        "Every project we touch carries a quiet promise: that what we specify will outlast the building it's installed in — because quality and innovation are not negotiable.",
       ],
     },
     values: {
@@ -364,7 +364,7 @@ export const en: Dictionary = {
     hero: {
       eyebrow: "Authorized partners",
       title: "Global brands. Local accountability.",
-      body: "We supply only what meets our specification standard. Each partner brand below is certified for performance in the Kingdom's climate and supported by TFS engineers on the ground.",
+      body: "We supply only what meets our specification standard. Each partner brand below is certified for performance in the Kingdom's climate and supported by JIC engineers on the ground.",
     },
     items: [
       {
@@ -432,7 +432,7 @@ export const en: Dictionary = {
     hero: {
       eyebrow: "Get in touch",
       title: "Let's build something durable.",
-      body: "Connect with our regional experts for technical consultation, quotes, and same-week sample delivery across the Kingdom.",
+      body: "Connect with our technical experts for consultation, quotes, and fast sample delivery across the Kingdom.",
     },
     form: {
       title: "Professional Sample Request",
@@ -465,16 +465,16 @@ export const en: Dictionary = {
         type: "headquarters",
         badge: "Headquarters",
         city: "Riyadh",
-        address: "Al-Qairawan District, Kingdom of Saudi Arabia",
+        address: "Al Maseef District, Saud Ibn Abdulaziz Ibn Muhammad Branch Road, Riyadh 12465, KSA",
         phone: { display: "+966 56 944 4664", href: "tel:+966569444664" },
-        email: { display: "info@firstsystem.sa", href: "mailto:info@firstsystem.sa" },
+        email: { display: "info@joudah-ibtkar.sa", href: "mailto:info@joudah-ibtkar.sa" },
         hours: "Sun – Thu • 8:00 – 17:00",
       },
       {
         type: "regional",
         badge: "Regional Office",
         city: "Jeddah",
-        address: "King Abdulaziz Road, Business Park, Plaza 3, KSA",
+        address: "King Abdulaziz Road, Business Park, Jeddah, KSA",
         phone: { display: "+966 56 944 4664", href: "tel:+966569444664" },
         email: null,
         hours: "Sun – Thu • 8:00 – 17:00",
@@ -483,7 +483,7 @@ export const en: Dictionary = {
         type: "regional",
         badge: "Regional Office",
         city: "Dammam",
-        address: "Industrial City 2, Logistics Hub, Block 44, KSA",
+        address: "Industrial City, Eastern Province, Dammam, KSA",
         phone: { display: "+966 56 944 4664", href: "tel:+966569444664" },
         email: null,
         hours: "Sun – Thu • 8:00 – 17:00",
@@ -495,15 +495,15 @@ export const en: Dictionary = {
     },
     network: {
       title: "Regional Presence",
-      body: "Our logistics network ensures next-day delivery of chemical solutions to any major site in the Kingdom.",
+      body: "Our logistics network ensures fast delivery of chemical solutions to any major site across the Kingdom.",
     },
   },
   footer: {
     tagline:
-      "Exclusive agents for Creative concrete Concepts in Saudi Arabia. Engineering reliability since 2015.",
+      "Joudah Al-Ibtkar Limited — Quality & Innovation in Construction Chemicals since 2023.",
     headquarters: {
       title: "Headquarters",
-      locations: ["Riyadh HQ – Al-Qairawan", "Jeddah Branch", "Dammam Support"],
+      locations: ["Riyadh HQ – Al Maseef District", "Jeddah Branch", "Dammam Support"],
     },
     quickLinks: {
       title: "Quick Links",
@@ -521,12 +521,12 @@ export const en: Dictionary = {
       phoneDisplay: "+966 56 944 4664",
       phoneHref: "https://wa.me/966569444664",
       emailLabel: "Email",
-      email: "info@firstsystem.sa",
+      email: "info@joudah-ibtkar.sa",
       hoursLabel: "Hours",
       hours: "Sun – Thu • 8:00 – 17:00",
     },
     legal: {
-      copyright: "© 2026 The First System. All rights reserved.",
+      copyright: "© 2026 Joudah Al-Ibtkar Limited. All rights reserved.",
       privacy: "Privacy",
       terms: "Terms",
     },
@@ -553,4 +553,3 @@ export const en: Dictionary = {
     noResults: "No matching documents found. Try checking your spelling or selecting another category.",
   },
 };
-

@@ -15,13 +15,13 @@ export default async function ContactPage() {
   const getMapLink = (city: string) => {
     const c = city.toLowerCase();
     if (c.includes("riyadh") || c.includes("رياض")) {
-      return "https://www.google.com/maps/search/?api=1&query=Al-Qairawan+District+Riyadh+Saudi+Arabia";
+      return "https://www.google.com/maps/search/?api=1&query=Al+Maseef+District+Riyadh+Saudi+Arabia";
     }
     if (c.includes("jeddah") || c.includes("جدة")) {
       return "https://www.google.com/maps/search/?api=1&query=King+Abdulaziz+Road+Jeddah+Saudi+Arabia";
     }
     if (c.includes("dammam") || c.includes("دمام")) {
-      return "https://www.google.com/maps/search/?api=1&query=Second+Industrial+City+Dammam+Saudi+Arabia";
+      return "https://www.google.com/maps/search/?api=1&query=Industrial+City+Dammam+Saudi+Arabia";
     }
     return "https://maps.google.com";
   };

@@ -262,7 +262,7 @@ export const cataloguesData: CatalogueItem[] = [
       subtitle: "Standard color selection guide for stamped concrete, overlays, and color hardeners.",
     },
     ar: {
-      title: "دليل الألوان القياسي TFS",
+      title: "دليل الألوان القياسي JIC",
       subtitle: "دليل اختيار الألوان القياسية للخرسانة المطبوعة والأغطية ومصلبات الأرضيات.",
     },
   },

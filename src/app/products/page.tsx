@@ -121,7 +121,7 @@ export default async function ProductsPage() {
             </div>
             <div className="flex flex-wrap gap-3 md:justify-self-end">
               <Button
-                href="mailto:Sales2@firstsystem.sa"
+                href="mailto:info@joudah-ibtkar.sa"
                 size="lg"
                 trailingIcon={arrow}
                 external

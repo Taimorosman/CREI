@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Syne, IBM_Plex_Sans_Arabic } from "next/font/google";
-import { getDictionary } from "@/i18n/getDictionary";
+import { LanguageProvider } from "@/context/LanguageContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
@@ -27,38 +27,36 @@ const plexArabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "The First System | Decorative & Construction Chemicals",
-  description: "The Kingdom's leading authority in advanced decorative and construction chemicals. Exclusive agent for PROTECTIVE COATINGS Concepts since 2015.",
+  title: "Joudah Al-Ibtkar | Quality & Innovation in Construction Chemicals",
+  description: "Joudah Al-Ibtkar Limited (JIC) — delivering advanced decorative and construction chemical solutions across the Kingdom of Saudi Arabia since 2023. Quality and innovation at every step.",
   icons: {
     icon: [
-      { url: "/favicon.ico?v=5", type: "image/x-icon" },
-      { url: "/icon.png?v=5", type: "image/png", sizes: "128x128" },
-      { url: "/icon.svg?v=5", type: "image/svg+xml" },
+      { url: "/favicon.ico?v=6", type: "image/x-icon" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "128x128" },
+      { url: "/icon.svg?v=6", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico?v=5",
-    apple: "/favicon.ico?v=5",
+    shortcut: "/favicon.ico?v=6",
+    apple: "/favicon.ico?v=6",
   },
   alternates: {
     languages: {
       en: "/",
+      ar: "/",
     },
   },
   openGraph: {
-    title: "The First System | Decorative & Construction Chemicals",
-    description: "The Kingdom's leading authority in advanced decorative and construction chemicals. Exclusive agent for PROTECTIVE COATINGS Concepts since 2015.",
-    siteName: "The First System",
+    title: "Joudah Al-Ibtkar | Quality & Innovation in Construction Chemicals",
+    description: "Joudah Al-Ibtkar Limited (JIC) — delivering advanced decorative and construction chemical solutions across the Kingdom of Saudi Arabia since 2023.",
+    siteName: "Joudah Al-Ibtkar",
     locale: "en_US",
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const locale = "en";
-  const dict = getDictionary(locale);
-
   return (
     <html
       lang="en"
@@ -67,11 +65,13 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
-        <MouseParallax />
-        <Header locale={locale} dict={dict} />
-        <main>{children}</main>
-        <Footer locale={locale} dict={dict} />
-        <WhatsAppFab locale={locale} />
+        <LanguageProvider>
+          <MouseParallax />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppFab />
+        </LanguageProvider>
       </body>
     </html>
   );

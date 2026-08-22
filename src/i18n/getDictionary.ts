@@ -8,5 +8,5 @@ const dictionaries: Record<Locale, Dictionary> = { en, ar };
 export type Dict = Dictionary;
 
 export function getDictionary(locale: Locale): Dictionary {
-  return dictionaries[locale];
+  return dictionaries[locale] || dictionaries.en;
 }

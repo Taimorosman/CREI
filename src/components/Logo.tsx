@@ -11,16 +11,14 @@ export function Logo({
   locale?: string;
   className?: string;
 }) {
-  // Since the user requested to replace the previous logo with the new tfs signage PDF logo,
-  // we render the newly converted SVG logo.
-  // The logo has an aspect ratio of 3:1 (viewBox 1196 400 6114 2038).
+  // Joudah Al-Ibtkar (JIC) logo — aspect ratio ~3.5:1 (1400x400 viewBox)
   const height = size;
-  const width = size * 3;
+  const width = size * 3.5;
 
   return (
     <img
-      src="/images/tfs_logo.svg"
-      alt="The First System"
+      src="/images/jic_logo.svg"
+      alt="Joudah Al-Ibtkar"
       width={width}
       height={height}
       className={`h-auto object-contain ${className}`}
