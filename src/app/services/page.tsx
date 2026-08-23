@@ -1,16 +1,15 @@
-import { notFound } from "next/navigation";
-import { isLocale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/getDictionary";
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { Icon, type IconName } from "@/components/Icon";
 import { SampleRequestForm } from "@/components/SampleRequestForm";
 
-export default async function ServicesPage() {
-  const locale = "en";
-  const dict = getDictionary(locale);
+export default function ServicesPage() {
+  const { locale, dict, dir } = useLanguage();
   const t = dict.services;
-  const isAr = false;
+  const isAr = locale === "ar";
 
   const getServiceBgImage = (id: string) => {
     switch (id) {

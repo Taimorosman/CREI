@@ -1,18 +1,17 @@
-import { notFound } from "next/navigation";
-import { isLocale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/getDictionary";
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { Button } from "@/components/Button";
 import { Icon, type IconName } from "@/components/Icon";
 import { CataloguesList } from "@/components/CataloguesList";
 
-export default async function ProductsPage() {
-  const locale = "en";
-  const dict = getDictionary(locale);
+export default function ProductsPage() {
+  const { locale, dict, dir } = useLanguage();
   const t = dict.products;
-  const isAr = false;
-  const arrow = "ArrowRight";
+  const isAr = locale === "ar";
+  const arrow = dir === "rtl" ? "ArrowLeft" : "ArrowRight";
 
   return (
     <>

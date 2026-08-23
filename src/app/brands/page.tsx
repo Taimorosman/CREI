@@ -1,18 +1,17 @@
-import { notFound } from "next/navigation";
-import { isLocale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/getDictionary";
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
 import Link from "next/link";
 
-export default async function BrandsPage() {
-  const locale = "en";
-  const dict = getDictionary(locale);
+export default function BrandsPage() {
+  const { locale, dict, dir } = useLanguage();
   const t = dict.brands;
-  const isAr = false;
-  const arrow = "ArrowRight";
+  const isAr = locale === "ar";
+  const arrow = dir === "rtl" ? "ArrowLeft" : "ArrowRight";
 
   const getBrandBgImage = (id: string) => {
     switch (id) {

@@ -1,16 +1,15 @@
-import { notFound } from "next/navigation";
-import { isLocale, Locale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/getDictionary";
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { Icon } from "@/components/Icon";
 import { SampleRequestForm } from "@/components/SampleRequestForm";
 
-export default async function ContactPage() {
-  const locale: Locale = "en";
-  const isAr = (locale as string) === "ar";
-  const dict = getDictionary(locale);
+export default function ContactPage() {
+  const { locale, dict, dir } = useLanguage();
   const t = dict.contact;
+  const isAr = locale === "ar";
 
   const getMapLink = (city: string) => {
     const c = city.toLowerCase();
